@@ -1,0 +1,6 @@
+{
+  "name": "CatchPhish - Phishing Detection & Explainability Platform",
+  "description": "Catch threats before they catch you. AI-powered phishing email detection, explainable risk scoring, and interactive threat intelligence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

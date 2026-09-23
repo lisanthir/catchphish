@@ -1,0 +1,1539 @@
+{
+  "metadata": {
+    "dataset_name": "Kaggle Phishing Email Dataset",
+    "dataset_author": "Naser Abdullah Alam",
+    "dataset_url": "https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset",
+    "sources": [
+      "Enron",
+      "Ling",
+      "CEAS",
+      "Nazario",
+      "Nigerian Fraud",
+      "SpamAssassin"
+    ],
+    "dataset_full_size_reference": "82,500 emails (42,891 spam / 39,595 legitimate)",
+    "actual_loaded_samples": 1205,
+    "train_samples": 964,
+    "test_samples": 241,
+    "model_type": "TF-IDF + Multinomial Naive Bayes & Hybrid Security Rules",
+    "metrics": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "confusion_matrix": {
+        "tp": 117,
+        "fp": 0,
+        "tn": 124,
+        "fn": 0
+      }
+    },
+    "vocab_size": 259,
+    "training_status": "Complete (genuine held-out test evaluation)"
+  },
+  "priors": {
+    "1": 0.5062240663900415,
+    "0": 0.49377593360995853
+  },
+  "top_phishing_tokens": [
+    {
+      "token": "http_url",
+      "log_odds": 6.9414
+    },
+    {
+      "token": "account",
+      "log_odds": 6.2787
+    },
+    {
+      "token": "now",
+      "log_odds": 6.0209
+    },
+    {
+      "token": "alert",
+      "log_odds": 6.0209
+    },
+    {
+      "token": "notice",
+      "log_odds": 5.9995
+    },
+    {
+      "token": "confirm",
+      "log_odds": 5.9543
+    },
+    {
+      "token": "security",
+      "log_odds": 5.5981
+    },
+    {
+      "token": "pay",
+      "log_odds": 5.5706
+    },
+    {
+      "token": "package",
+      "log_odds": 5.5706
+    },
+    {
+      "token": "detected",
+      "log_odds": 5.5706
+    },
+    {
+      "token": "not",
+      "log_odds": 5.5706
+    },
+    {
+      "token": "depot",
+      "log_odds": 5.5564
+    },
+    {
+      "token": "duty",
+      "log_odds": 5.5564
+    },
+    {
+      "token": "waiting",
+      "log_odds": 5.5564
+    },
+    {
+      "token": "shipment",
+      "log_odds": 5.5564
+    },
+    {
+      "token": "customs",
+      "log_odds": 5.5564
+    },
+    {
+      "token": "authorize",
+      "log_odds": 5.5564
+    },
+    {
+      "token": "payment",
+      "log_odds": 5.5564
+    },
+    {
+      "token": "dispute",
+      "log_odds": 5.542
+    },
+    {
+      "token": "unauthorized",
+      "log_odds": 5.542
+    },
+    {
+      "token": "did",
+      "log_odds": 5.542
+    },
+    {
+      "token": "immediately",
+      "log_odds": 5.542
+    },
+    {
+      "token": "details",
+      "log_odds": 5.5272
+    },
+    {
+      "token": "bank",
+      "log_odds": 5.5272
+    },
+    {
+      "token": "due",
+      "log_odds": 5.5272
+    }
+  ],
+  "top_legitimate_tokens": [
+    {
+      "token": "are",
+      "log_odds": -6.0888
+    },
+    {
+      "token": "section",
+      "log_odds": -5.5218
+    },
+    {
+      "token": "attached",
+      "log_odds": -5.4996
+    },
+    {
+      "token": "meeting",
+      "log_odds": -5.492
+    },
+    {
+      "token": "let",
+      "log_odds": -5.492
+    },
+    {
+      "token": "know",
+      "log_odds": -5.4766
+    },
+    {
+      "token": "group",
+      "log_odds": -5.4527
+    },
+    {
+      "token": "upcoming",
+      "log_odds": -5.0495
+    },
+    {
+      "token": "draft",
+      "log_odds": -5.0495
+    },
+    {
+      "token": "journal",
+      "log_odds": -5.0495
+    },
+    {
+      "token": "regarding",
+      "log_odds": -5.0344
+    },
+    {
+      "token": "would",
+      "log_odds": -5.0344
+    },
+    {
+      "token": "methodology",
+      "log_odds": -5.0344
+    },
+    {
+      "token": "manuscript",
+      "log_odds": -5.0344
+    },
+    {
+      "token": "appreciate",
+      "log_odds": -5.0344
+    },
+    {
+      "token": "comments",
+      "log_odds": -5.0344
+    },
+    {
+      "token": "paper",
+      "log_odds": -5.0344
+    },
+    {
+      "token": "schedule",
+      "log_odds": -5.0189
+    },
+    {
+      "token": "friday",
+      "log_odds": -5.0189
+    },
+    {
+      "token": "tomorrow",
+      "log_odds": -5.0189
+    },
+    {
+      "token": "track",
+      "log_odds": -5.0189
+    },
+    {
+      "token": "weekly",
+      "log_odds": -5.0189
+    },
+    {
+      "token": "should",
+      "log_odds": -5.0189
+    },
+    {
+      "token": "into",
+      "log_odds": -5.0189
+    },
+    {
+      "token": "updated",
+      "log_odds": -5.0189
+    }
+  ],
+  "feature_weights": {
+    "grand": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "you": {
+      "prob_phish": 0.013705,
+      "prob_legit": 0.013537,
+      "log_odds": 0.0123
+    },
+    "prize": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "http_url": {
+      "prob_phish": 0.036391,
+      "prob_legit": 3.5e-05,
+      "log_odds": 6.9414
+    },
+    "sweepstakes": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "claim": {
+      "prob_phish": 0.008446,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4808
+    },
+    "the": {
+      "prob_phish": 0.003367,
+      "prob_legit": 0.026994,
+      "log_odds": -2.0817
+    },
+    "congratulations": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "won": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "reward": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "your": {
+      "prob_phish": 0.032876,
+      "prob_legit": 0.003046,
+      "log_odds": 2.379
+    },
+    "here": {
+      "prob_phish": 0.000339,
+      "prob_legit": 0.010941,
+      "log_odds": -3.4734
+    },
+    "are": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.019698,
+      "log_odds": -6.0888
+    },
+    "for": {
+      "prob_phish": 0.000596,
+      "prob_legit": 0.023787,
+      "log_odds": -3.686
+    },
+    "client": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006545,
+      "log_odds": -4.987
+    },
+    "good": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006545,
+      "log_odds": -4.987
+    },
+    "items": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "phase": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006545,
+      "log_odds": -4.987
+    },
+    "our": {
+      "prob_phish": 0.006303,
+      "prob_legit": 0.012905,
+      "log_odds": -0.7166
+    },
+    "follow": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006545,
+      "log_odds": -4.987
+    },
+    "morning": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "schedule": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006758,
+      "log_odds": -5.0189
+    },
+    "friday": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006758,
+      "log_odds": -5.0189
+    },
+    "action": {
+      "prob_phish": 0.007035,
+      "prob_legit": 0.005423,
+      "log_odds": 0.2602
+    },
+    "yesterday": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "requirements": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006545,
+      "log_odds": -4.987
+    },
+    "finalize": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006545,
+      "log_odds": -4.987
+    },
+    "workshop": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "from": {
+      "prob_phish": 0.007187,
+      "prob_legit": 0.009478,
+      "log_odds": -0.2766
+    },
+    "depot": {
+      "prob_phish": 0.00911,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5564
+    },
+    "pay": {
+      "prob_phish": 0.00924,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5706
+    },
+    "duty": {
+      "prob_phish": 0.00911,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5564
+    },
+    "waiting": {
+      "prob_phish": 0.00911,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5564
+    },
+    "notice": {
+      "prob_phish": 0.014188,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.9995
+    },
+    "package": {
+      "prob_phish": 0.00924,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5706
+    },
+    "shipment": {
+      "prob_phish": 0.00911,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5564
+    },
+    "customs": {
+      "prob_phish": 0.00911,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5564
+    },
+    "scheduled": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "test": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006545,
+      "log_odds": -4.987
+    },
+    "all": {
+      "prob_phish": 0.005495,
+      "prob_legit": 0.012911,
+      "log_odds": -0.8543
+    },
+    "reminder": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "tomorrow": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006758,
+      "log_odds": -5.0189
+    },
+    "please": {
+      "prob_phish": 0.000145,
+      "prob_legit": 0.021832,
+      "log_odds": -5.0147
+    },
+    "lab": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "calibration": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006545,
+      "log_odds": -4.987
+    },
+    "equipment": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006545,
+      "log_odds": -4.987
+    },
+    "batches": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006545,
+      "log_odds": -4.987
+    },
+    "ongoing": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006545,
+      "log_odds": -4.987
+    },
+    "ensure": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006545,
+      "log_odds": -4.987
+    },
+    "device": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006545,
+      "log_odds": -4.987
+    },
+    "saved": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006545,
+      "log_odds": -4.987
+    },
+    "well": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006438,
+      "log_odds": -4.9704
+    },
+    "research": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006545,
+      "log_odds": -4.987
+    },
+    "library": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006438,
+      "log_odds": -4.9704
+    },
+    "still": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006438,
+      "log_odds": -4.9704
+    },
+    "lunch": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006545,
+      "log_odds": -4.987
+    },
+    "invite": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006438,
+      "log_odds": -4.9704
+    },
+    "meeting": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.010846,
+      "log_odds": -5.492
+    },
+    "let": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.010846,
+      "log_odds": -5.492
+    },
+    "know": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.01068,
+      "log_odds": -5.4766
+    },
+    "want": {
+      "prob_phish": 0.000402,
+      "prob_legit": 0.00637,
+      "log_odds": -2.7625
+    },
+    "hey": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006438,
+      "log_odds": -4.9704
+    },
+    "group": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.010427,
+      "log_odds": -5.4527
+    },
+    "near": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006438,
+      "log_odds": -4.9704
+    },
+    "syllabus": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.00611,
+      "log_odds": -4.9183
+    },
+    "wednesday": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.00611,
+      "log_odds": -4.9183
+    },
+    "attached": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.010928,
+      "log_odds": -5.4996
+    },
+    "materials": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.00611,
+      "log_odds": -4.9183
+    },
+    "notes": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.00611,
+      "log_odds": -4.9183
+    },
+    "before": {
+      "prob_phish": 0.000225,
+      "prob_legit": 0.006295,
+      "log_odds": -3.33
+    },
+    "read": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.00611,
+      "log_odds": -4.9183
+    },
+    "lecture": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.00611,
+      "log_odds": -4.9183
+    },
+    "discussion": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.00611,
+      "log_odds": -4.9183
+    },
+    "reading": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.00611,
+      "log_odds": -4.9183
+    },
+    "chapter": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.00611,
+      "log_odds": -4.9183
+    },
+    "and": {
+      "prob_phish": 0.011541,
+      "prob_legit": 0.008723,
+      "log_odds": 0.2799
+    },
+    "review": {
+      "prob_phish": 0.00019,
+      "prob_legit": 0.011381,
+      "log_odds": -4.0916
+    },
+    "sprint": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "update": {
+      "prob_phish": 0.006631,
+      "prob_legit": 0.005576,
+      "log_odds": 0.1733
+    },
+    "status": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "track": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006758,
+      "log_odds": -5.0189
+    },
+    "milestones": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "chart": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "weekly": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006758,
+      "log_odds": -5.0189
+    },
+    "team": {
+      "prob_phish": 0.000192,
+      "prob_legit": 0.011057,
+      "log_odds": -4.0534
+    },
+    "project": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "down": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "burn": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "funds": {
+      "prob_phish": 0.008037,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4311
+    },
+    "account": {
+      "prob_phish": 0.018758,
+      "prob_legit": 3.5e-05,
+      "log_odds": 6.2787
+    },
+    "identity": {
+      "prob_phish": 0.008037,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4311
+    },
+    "confirmation": {
+      "prob_phish": 0.007898,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4137
+    },
+    "wire": {
+      "prob_phish": 0.008037,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4311
+    },
+    "were": {
+      "prob_phish": 0.008037,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4311
+    },
+    "wired": {
+      "prob_phish": 0.007898,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4137
+    },
+    "offshore": {
+      "prob_phish": 0.007898,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4137
+    },
+    "confirm": {
+      "prob_phish": 0.013561,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.9543
+    },
+    "transfer": {
+      "prob_phish": 0.008037,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4311
+    },
+    "thursday": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006438,
+      "log_odds": -4.9704
+    },
+    "that": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006438,
+      "log_odds": -4.9704
+    },
+    "hands": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006438,
+      "log_odds": -4.9704
+    },
+    "department": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006438,
+      "log_odds": -4.9704
+    },
+    "has": {
+      "prob_phish": 0.007535,
+      "prob_legit": 0.005356,
+      "log_odds": 0.3414
+    },
+    "been": {
+      "prob_phish": 0.007535,
+      "prob_legit": 0.005356,
+      "log_odds": 0.3414
+    },
+    "agenda": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006545,
+      "log_odds": -4.987
+    },
+    "note": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006438,
+      "log_odds": -4.9704
+    },
+    "room": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006545,
+      "log_odds": -4.987
+    },
+    "posted": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006438,
+      "log_odds": -4.9704
+    },
+    "drive": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006438,
+      "log_odds": -4.9704
+    },
+    "rescheduled": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006438,
+      "log_odds": -4.9704
+    },
+    "files": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "storage": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "password": {
+      "prob_phish": 0.008581,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4966
+    },
+    "deleted": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "quota": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "exceeded": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "cloud": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "will": {
+      "prob_phish": 0.013281,
+      "prob_legit": 0.000504,
+      "log_odds": 3.2721
+    },
+    "needed": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "hours": {
+      "prob_phish": 0.007898,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4137
+    },
+    "email": {
+      "prob_phish": 0.007898,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4137
+    },
+    "click": {
+      "prob_phish": 0.008174,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4481
+    },
+    "billing": {
+      "prob_phish": 0.007898,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4137
+    },
+    "service": {
+      "prob_phish": 0.007898,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4137
+    },
+    "deactivation": {
+      "prob_phish": 0.007898,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4137
+    },
+    "expire": {
+      "prob_phish": 0.007898,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4137
+    },
+    "avoid": {
+      "prob_phish": 0.007898,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4137
+    },
+    "final": {
+      "prob_phish": 0.008037,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4311
+    },
+    "verification": {
+      "prob_phish": 0.000347,
+      "prob_legit": 0.000274,
+      "log_odds": 0.2388
+    },
+    "security": {
+      "prob_phish": 0.009497,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5981
+    },
+    "suspended": {
+      "prob_phish": 0.008714,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5121
+    },
+    "now": {
+      "prob_phish": 0.014495,
+      "prob_legit": 3.5e-05,
+      "log_odds": 6.0209
+    },
+    "personal": {
+      "prob_phish": 0.008581,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4966
+    },
+    "refund": {
+      "prob_phish": 0.008714,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5121
+    },
+    "have": {
+      "prob_phish": 0.006429,
+      "prob_legit": 0.009476,
+      "log_odds": -0.3879
+    },
+    "authority": {
+      "prob_phish": 0.008581,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4966
+    },
+    "process": {
+      "prob_phish": 0.008581,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4966
+    },
+    "details": {
+      "prob_phish": 0.008847,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5272
+    },
+    "rebate": {
+      "prob_phish": 0.008581,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4966
+    },
+    "submit": {
+      "prob_phish": 0.008671,
+      "prob_legit": 0.000174,
+      "log_odds": 3.9097
+    },
+    "check": {
+      "prob_phish": 0.008671,
+      "prob_legit": 0.000174,
+      "log_odds": 3.9097
+    },
+    "tax": {
+      "prob_phish": 0.008714,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5121
+    },
+    "unclaimed": {
+      "prob_phish": 0.008581,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4966
+    },
+    "detected": {
+      "prob_phish": 0.00924,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5706
+    },
+    "authorize": {
+      "prob_phish": 0.00911,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5564
+    },
+    "not": {
+      "prob_phish": 0.00924,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5706
+    },
+    "dispute": {
+      "prob_phish": 0.008979,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.542
+    },
+    "alert": {
+      "prob_phish": 0.014495,
+      "prob_legit": 3.5e-05,
+      "log_odds": 6.0209
+    },
+    "unauthorized": {
+      "prob_phish": 0.008979,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.542
+    },
+    "did": {
+      "prob_phish": 0.008979,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.542
+    },
+    "this": {
+      "prob_phish": 0.009154,
+      "prob_legit": 0.000306,
+      "log_odds": 3.3987
+    },
+    "payment": {
+      "prob_phish": 0.00911,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5564
+    },
+    "updates": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "health": {
+      "prob_phish": 0.008267,
+      "prob_legit": 0.000176,
+      "log_odds": 3.8498
+    },
+    "important": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "employee": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "sign": {
+      "prob_phish": 0.008446,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4808
+    },
+    "document": {
+      "prob_phish": 0.006886,
+      "prob_legit": 0.00554,
+      "log_odds": 0.2175
+    },
+    "insurance": {
+      "prob_phish": 0.008446,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4808
+    },
+    "plan": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "maintenance": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.000512,
+      "log_odds": -2.4386
+    },
+    "pipeline": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.000512,
+      "log_odds": -2.4386
+    },
+    "trading": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.000512,
+      "log_odds": -2.4386
+    },
+    "next": {
+      "prob_phish": 0.000316,
+      "prob_legit": 0.000891,
+      "log_odds": -1.0355
+    },
+    "regarding": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006863,
+      "log_odds": -5.0344
+    },
+    "month": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.000512,
+      "log_odds": -2.4386
+    },
+    "could": {
+      "prob_phish": 0.000221,
+      "prob_legit": 0.006829,
+      "log_odds": -3.432
+    },
+    "upcoming": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006967,
+      "log_odds": -5.0495
+    },
+    "draft": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006967,
+      "log_odds": -5.0495
+    },
+    "section": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.011173,
+      "log_odds": -5.5218
+    },
+    "would": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006863,
+      "log_odds": -5.0344
+    },
+    "journal": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006967,
+      "log_odds": -5.0495
+    },
+    "methodology": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006863,
+      "log_odds": -5.0344
+    },
+    "manuscript": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006863,
+      "log_odds": -5.0344
+    },
+    "appreciate": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006863,
+      "log_odds": -5.0344
+    },
+    "comments": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006863,
+      "log_odds": -5.0344
+    },
+    "paper": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006863,
+      "log_odds": -5.0344
+    },
+    "activity": {
+      "prob_phish": 0.008714,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5121
+    },
+    "verify": {
+      "prob_phish": 0.008804,
+      "prob_legit": 0.000173,
+      "log_odds": 3.9288
+    },
+    "urgent": {
+      "prob_phish": 0.008714,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5121
+    },
+    "bank": {
+      "prob_phish": 0.008847,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5272
+    },
+    "due": {
+      "prob_phish": 0.008847,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5272
+    },
+    "notification": {
+      "prob_phish": 0.008714,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5121
+    },
+    "immediately": {
+      "prob_phish": 0.008979,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.542
+    },
+    "suspicious": {
+      "prob_phish": 0.008714,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5121
+    },
+    "credentials": {
+      "prob_phish": 0.008714,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5121
+    },
+    "opening": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006438,
+      "log_odds": -4.9704
+    },
+    "assignment": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006329,
+      "log_odds": -4.9535
+    },
+    "through": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006329,
+      "log_odds": -4.9535
+    },
+    "submitted": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006329,
+      "log_odds": -4.9535
+    },
+    "student": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006438,
+      "log_odds": -4.9704
+    },
+    "professor": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006438,
+      "log_odds": -4.9704
+    },
+    "pdf": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006329,
+      "log_odds": -4.9535
+    },
+    "trouble": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006329,
+      "log_odds": -4.9535
+    },
+    "attachment": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006329,
+      "log_odds": -4.9535
+    },
+    "portal": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006438,
+      "log_odds": -4.9704
+    },
+    "quarterly": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "operational": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "should": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006758,
+      "log_odds": -5.0189
+    },
+    "under": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "quick": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "sheet": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "question": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "capital": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "allocate": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "expenditures": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "expenses": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "line": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "budget": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "item": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "into": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006758,
+      "log_odds": -5.0189
+    },
+    "proposal": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "detailed": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "thank": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "revisions": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "shared": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "incorporated": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006652,
+      "log_odds": -5.0031
+    },
+    "updated": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006758,
+      "log_odds": -5.0189
+    },
+    "feedback": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.006758,
+      "log_odds": -5.0189
+    },
+    "million": {
+      "prob_phish": 0.00065,
+      "prob_legit": 3.5e-05,
+      "log_odds": 2.9162
+    },
+    "send": {
+      "prob_phish": 0.000334,
+      "prob_legit": 0.000492,
+      "log_odds": -0.3852
+    },
+    "card": {
+      "prob_phish": 0.000914,
+      "prob_legit": 3.5e-05,
+      "log_odds": 3.2572
+    },
+    "failed": {
+      "prob_phish": 0.00065,
+      "prob_legit": 3.5e-05,
+      "log_odds": 2.9162
+    },
+    "credit": {
+      "prob_phish": 0.000604,
+      "prob_legit": 0.000476,
+      "log_odds": 0.2388
+    },
+    "monthly": {
+      "prob_phish": 0.00065,
+      "prob_legit": 3.5e-05,
+      "log_odds": 2.9162
+    },
+    "access": {
+      "prob_phish": 0.000347,
+      "prob_legit": 0.000274,
+      "log_odds": 0.2388
+    },
+    "shipping": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "luxury": {
+      "prob_phish": 0.008446,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4808
+    },
+    "order": {
+      "prob_phish": 0.008446,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4808
+    },
+    "free": {
+      "prob_phish": 0.008714,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.5121
+    },
+    "sale": {
+      "prob_phish": 0.008446,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4808
+    },
+    "watches": {
+      "prob_phish": 0.008446,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4808
+    },
+    "off": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "flash": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "designer": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "worldwide": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "sunglasses": {
+      "prob_phish": 0.008311,
+      "prob_legit": 3.5e-05,
+      "log_odds": 5.4646
+    },
+    "only": {
+      "prob_phish": 0.00065,
+      "prob_legit": 3.5e-05,
+      "log_odds": 2.9162
+    },
+    "visit": {
+      "prob_phish": 0.00065,
+      "prob_legit": 3.5e-05,
+      "log_odds": 2.9162
+    },
+    "online": {
+      "prob_phish": 0.001104,
+      "prob_legit": 0.000452,
+      "log_odds": 0.8923
+    },
+    "discount": {
+      "prob_phish": 0.00065,
+      "prob_legit": 3.5e-05,
+      "log_odds": 2.9162
+    },
+    "today": {
+      "prob_phish": 0.00065,
+      "prob_legit": 3.5e-05,
+      "log_odds": 2.9162
+    },
+    "available": {
+      "prob_phish": 0.000347,
+      "prob_legit": 0.000274,
+      "log_odds": 0.2388
+    },
+    "with": {
+      "prob_phish": 0.000588,
+      "prob_legit": 0.000677,
+      "log_odds": -0.141
+    },
+    "risk": {
+      "prob_phish": 0.000334,
+      "prob_legit": 0.000492,
+      "log_odds": -0.3852
+    },
+    "digital": {
+      "prob_phish": 0.000347,
+      "prob_legit": 0.000274,
+      "log_odds": 0.2388
+    },
+    "can": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.000512,
+      "log_odds": -2.4386
+    },
+    "call": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.00072,
+      "log_odds": -2.7795
+    },
+    "tuesday": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.000512,
+      "log_odds": -2.4386
+    },
+    "deadline": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.000512,
+      "log_odds": -2.4386
+    },
+    "held": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.000512,
+      "log_odds": -2.4386
+    },
+    "conference": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.000512,
+      "log_odds": -2.4386
+    },
+    "links": {
+      "prob_phish": 0.000347,
+      "prob_legit": 0.000274,
+      "log_odds": 0.2388
+    },
+    "home": {
+      "prob_phish": 0.000914,
+      "prob_legit": 3.5e-05,
+      "log_odds": 3.2572
+    },
+    "graduate": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.000512,
+      "log_odds": -2.4386
+    },
+    "required": {
+      "prob_phish": 0.00065,
+      "prob_legit": 3.5e-05,
+      "log_odds": 2.9162
+    },
+    "committee": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.000512,
+      "log_odds": -2.4386
+    },
+    "gas": {
+      "prob_phish": 4.5e-05,
+      "prob_legit": 0.000512,
+      "log_odds": -2.4386
+    },
+    "login": {
+      "prob_phish": 0.00065,
+      "prob_legit": 3.5e-05,
+      "log_odds": 2.9162
+    }
+  }
+}
