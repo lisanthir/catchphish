@@ -208,11 +208,24 @@ export const ReportsView: React.FC<ReportsViewProps> = ({
           borderColor: 'var(--card-border)',
         }}
       >
-        <div className="flex items-center gap-2.5">
-          <Database className="w-5 h-5 text-sky-400" />
-          <h2 className="text-base font-extrabold" style={{ color: 'var(--text-primary)' }}>
-            Dataset Transparency &amp; Provenance
-          </h2>
+        <div className="flex items-center justify-between gap-4 flex-wrap">
+          <div className="flex items-center gap-2.5">
+            <Database className="w-5 h-5 text-sky-400" />
+            <h2 className="text-base font-extrabold" style={{ color: 'var(--text-primary)' }}>
+              Dataset Transparency &amp; Provenance
+            </h2>
+          </div>
+
+          <a
+            href="https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-semibold cursor-pointer transition-colors hover:bg-black/5 dark:hover:bg-white/5"
+            style={{ borderColor: 'var(--border-primary)', color: 'var(--accent-text)' }}
+          >
+            <span>View on Kaggle</span>
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">

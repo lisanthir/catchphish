@@ -99,7 +99,8 @@ Unlike black-box spam filters that provide arbitrary binary flags, CatchPhish fe
 ## 🧠 ML Model & Kaggle Dataset Transparency
 
 ### Dataset Provenance
-* **Dataset:** *Kaggle Phishing Email Dataset*
+* **Dataset:** [Kaggle Phishing Email Dataset](https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset)
+* **Kaggle Link:** [https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset](https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset)
 * **Author / Curator:** Naser Abdullah Alam
 * **Full Dataset Reference Size:** ~82,500 total emails (approx. 42,891 spam/phishing, 39,595 legitimate)
 * **Sub-Corpora Sources:**
