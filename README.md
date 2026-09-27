@@ -1,10 +1,13 @@
-# CatchPhish — Phishing Detection & Explainability Platform
+## MY PROBLEM STATEMENT-Phishing email detection 
+I wanted to work on a practical problem where AI could help identify potentially harmful or suspicious content. Through Catch Phish my goal is to build a solution that can analyze the given url in the email  or related information and help users identify whether it is potentially phishing or legitimate.I chose this problem because it combines AI, cybersecurity, and real-world impact, while also giving me an opportunity to build a practical and demonstrable solution.
+#  PROPOSED SOLUTION  CatchPhish  — Phishing Detection & Explainability Platform
 
 > **"Catch threats before they catch you."**
 > AI-powered phishing email detection, explainable risk scoring, and interactive threat intelligence.
 
----
-
+## DEMONSTARTION OF CATCHPHISH:
+Click the link in about section (deployed in vercel) for viewing the website
+GOOGLE DRIVE LINK:https://drive.google.com/file/d/1re39hzMaeS2_ek1GfOXehs9oxFGAkPiX/view?usp=sharing(copy and paste the li nk)
 ## 📌 Overview
 
 **CatchPhish** is an explainable email security platform and cyberdefense dashboard designed to detect phishing, social engineering attacks, and adversarial email lures before harm occurs.
