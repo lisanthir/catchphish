@@ -10,7 +10,7 @@ Click the link in about section (deployed in vercel) for viewing the website
 
 WEBSITE LINK:https://catchphish-3ka1.vercel.app/
 
-GOOGLE DRIVE LINK:https://drive.google.com/file/d/1re39hzMaeS2_ek1GfOXehs9oxFGAkPiX/view?usp=sharing
+
 ## 📌 Overview
 
 **CatchPhish** is an explainable email security platform and cyberdefense dashboard designed to detect phishing, social engineering attacks, and adversarial email lures before harm occurs.
